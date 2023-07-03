@@ -5,6 +5,7 @@ import { ScheduleModule } from '@nestjs/schedule';
 import { HttpModule } from '@nestjs/axios';
 import { ExchangeRateService } from './exchange-rate.service';
 import { ConfigModule } from '@nestjs/config';
+import { LotusListingService } from './lotus-listing.service';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { ConfigModule } from '@nestjs/config';
   providers: [
     AppService, 
     ExchangeRateService,
+    // LotusListingService,
   ],
 })
 export class AppModule {}
